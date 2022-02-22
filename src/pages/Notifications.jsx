@@ -1,7 +1,10 @@
 import React from 'react'
+import Navbar from '../components/Navbar/Navbar'
 
 export default function Notifications() {
   return (
-    <div>Notifications</div>
+    <div>
+      <Navbar/>
+      Notifications</div>
   )
 }

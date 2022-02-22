@@ -1,10 +1,13 @@
 import React, { useState } from 'react'
+import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 
 export default function HomeRight() {
     const [dropdown,setdropdown]=useState(true)
     const [dropdown2,setdropdown2]=useState(true)
     const [dropdown3,setdropdown3]=useState(true)
+    const {username}=useSelector(state=>state.linkdin)
+    
 
 
   return (
@@ -13,7 +16,7 @@ export default function HomeRight() {
                 <div className='w-full h-16 bg-blue-200 border-b-2  '></div>
 
               <img className='w-20 h-20 object-cover rounded-full border-2 absolute top-6 left-1/3 ' src="./p1.jpg" alt="" />
-                <Link to='profile' className='mt-14 font-medium cursor-pointer hover:underline transition duration-300 ease-in'>Mahta Rostami</Link>
+                <Link to='profile' className='mt-14 font-medium cursor-pointer hover:underline transition duration-300 ease-in'>{username}</Link>
                 <p className='font-light text-xs pb-2 border-b-2 '>student at urmia university</p>
                 <div className='flex  justify-between p-3 cursor-pointer hover:bg-gray-200'>
                     <p className='font-medium text-xs text-gray-500'>Who viewed your profile</p>

@@ -28,7 +28,7 @@ export default function Navbar() {
 
 
   <div className='flex'>
-    <Link to='/'>
+    <Link to='/home'>
     <div className='navbar-icon'>
       <div>
       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -39,7 +39,7 @@ export default function Navbar() {
     </div>
     </Link>
 
-    <Link to='mynetwork'>
+    <Link to='/mynetwork'>
     <div className='navbar-icon'>
       <div>
       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -49,7 +49,7 @@ export default function Navbar() {
       <p className='font-light text-xs'>My Network</p>
     </div>
     </Link>
-    <Link to='jobs'>
+    <Link to='/jobs'>
     <div className='navbar-icon'>
       <div>
       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -60,7 +60,7 @@ export default function Navbar() {
       <p className='font-light text-xs'>Jobs</p>
     </div>
     </Link>
-    <Link to='messaging'>
+    <Link to='/messaging'>
     <div className='navbar-icon'>
       <div>
       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -71,7 +71,7 @@ export default function Navbar() {
     </div>
     </Link>
 
-    <Link to='notifications'>
+    <Link to='/notifications'>
     <div className='navbar-icon'>
       <div>
       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -84,7 +84,7 @@ export default function Navbar() {
   </div>
   
 
-  <Link to='profile'>
+  <Link to='/profile'>
   <div className='flex flex-col items-center px-4'>
     <div className=' w-5 h-5 rounded-full overflow-hidden'>
     <img  src="./p1.jpg" alt="" />

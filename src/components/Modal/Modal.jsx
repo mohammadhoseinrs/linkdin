@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
+import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
 import { addtopost } from '../../services/Linkslice'
 
 export default function Modal({setmodal }) {
   const [textarea,settextarea]=useState('')
   const dispatch=useDispatch()
+  const {username}=useSelector(state=>state.linkdin)
 
   function submithandler(e){
     e.preventDefault()
@@ -12,7 +14,7 @@ export default function Modal({setmodal }) {
 
       id:3,
       img:'https://images.pexels.com/photos/2613260/pexels-photo-2613260.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
-      name:'Mahta Rostami',
+      name:username,
       job:'Student at urmia university',
       time:'45min .',
       desc:textarea,
@@ -42,7 +44,7 @@ export default function Modal({setmodal }) {
       <div className='flex items-center m-4'>
       <img className='w-14 h-14 object-cover rounded-full border-2  ' src="./p1.jpg" alt="" />
         <div>
-            <p className='font-semibold ml-4'>Mahta Rostami</p>
+            <p className='font-semibold ml-4'>{username}</p>
         </div>
     </div>  
     <form className='mx-4'>

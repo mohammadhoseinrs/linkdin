@@ -4,9 +4,14 @@ import Mynetwork from "./pages/Mynetwork";
 import Messaging from "./pages/Messaging";
 import Notifications from "./pages/Notifications";
 import Profile from "./pages/Profile";
+import Signup from "./pages/Signup";
+import Login from "./pages/Login";
 
 let routes=[
-    {path:'/',element:<Home/>},
+    {path:'/home',element:<Home/>},
+    {path:'/', element:<Login/>},
+    {path:'/signup',element:<Signup />},
+    {path:'/signup',element:<Signup />},
     {path:'/mynetwork',element:<Mynetwork />},
     {path:'/jobs',element:<Jobs />},
     {path:'/messaging',element:<Messaging />},
@@ -16,4 +21,6 @@ let routes=[
 ]
 
 
-export default routes
+
+
+export  {routes}
